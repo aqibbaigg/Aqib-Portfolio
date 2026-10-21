@@ -1,0 +1,19 @@
+# OS / OneDrive clutter
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+~$*
+
+# Editor folders
+.vscode/
+.idea/
+
+# Vercel CLI link folder (created if you ever run `vercel` locally)
+.vercel/
+
+# Local working files that should never be published
+*-backup.html
+*.mp4
+*.docx

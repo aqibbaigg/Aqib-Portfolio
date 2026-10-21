@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mirza Aqib Baig — AI/ML Engineer</title>
+<meta name="description" content="Portfolio of Mirza Aqib Baig — AI/ML Engineer. Python, deep learning, LLMs &amp; RAG. Production ML systems: RAG recruiter platform, self-improving vehicle classifier, BI and profit optimisation.">
+
+<meta name="theme-color" content="#faf7f1">
+<meta name="author" content="Mirza Aqib Baig">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Mirza Aqib Baig — AI/ML Engineer">
+<meta property="og:description" content="Production ML systems end to end: a live RAG recruiter platform, a self-improving 207-class vehicle classifier, and BI with profit optimisation.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mirza Aqib Baig — AI/ML Engineer">
+<meta name="twitter:description" content="Production ML systems end to end — PyTorch, LLMs &amp; RAG, FAISS, FastAPI, Docker.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%23201e24%22/%3E%3Ctext x=%2232%22 y=%2242%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22 font-weight=%22700%22 font-size=%2228%22 fill=%22%23d6b46a%22%3EMB%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mirza Aqib Baig","jobTitle":"AI/ML Engineer","worksFor":{"@type":"Organization","name":"Digilitics"},"address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressCountry":"IN"},"email":"mailto:aqibmirza059@gmail.com","sameAs":["https://github.com/aqibbaigg","https://www.linkedin.com/in/mirza-aqib-baig"],"knowsAbout":["Machine Learning","Deep Learning","PyTorch","Large Language Models","Retrieval-Augmented Generation","FAISS","FastAPI","Docker","PostgreSQL","Power BI"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#about">Skip to content</a>
+<a class="to-top" id="to-top" href="#hero" aria-label="Back to top"><svg viewBox="0 0 48 48" aria-hidden="true"><circle class="tt-track" cx="24" cy="24" r="21"/><circle class="tt-ring" cx="24" cy="24" r="21" pathLength="1"/></svg><span aria-hidden="true">&uarr;</span></a>
+
+<div id="landing" class="landing" role="presentation" aria-hidden="true">
+  <div class="landing-inner">
+    <span class="landing-mark">MB</span>
+    <h2 class="landing-name">Mirza Aqib Baig</h2>
+    <span class="landing-role">AI / ML Engineer</span>
+    <div class="landing-bar"><i></i></div>
+    <button type="button" class="star-border-container landing-enter" id="landing-enter" aria-label="Enter portfolio">
+      <div class="border-gradient-bottom"></div>
+      <div class="border-gradient-top"></div>
+      <div class="inner-content">Enter Portfolio &rarr;</div>
+    </button>
+  </div>
+  <div class="landing-load"><div class="landing-count"><span id="landing-num">000</span><sup>%</sup></div><div class="landing-status" id="landing-status">Loading portfolio</div></div>
+  <div class="landing-line"><i id="landing-line"></i></div>
+</div>
+
+<canvas id="ambient-canvas" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<nav id="nav">
+  <div class="bar">
+    <a class="logo" href="#hero" data-nav-link><span class="mark">MB</span>Mirza Aqib Baig</a>
+    <ul class="nav-links">
+      <li><a href="#hero" data-nav>Home</a></li>
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#experience" data-nav>Experience</a></li>
+      <li><a href="#skills" data-nav>Skills</a></li>
+      <li><a href="#projects" data-nav>Work</a></li>
+      <li><a href="#education" data-nav>Education</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <div class="sound-wrap">
+        <button class="sound-toggle" data-sound-toggle aria-pressed="true" title="Mute sound effects">
+          <svg class="on-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19 6a9 9 0 0 1 0 12"/></svg>
+          <svg class="off-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="m17 9 5 6M22 9l-5 6"/></svg>
+        </button>
+        <span class="sound-hint" id="sound-hint">Soft UI sounds &mdash; tap to mute</span>
+      </div>
+      <a class="btn-mini" href="#contact" data-nav-link>Get in Touch</a>
+      <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><div class="burger"><span></span><span></span><span></span></div></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<div class="hero-pin" id="hero-pin">
+<section id="hero" aria-label="Introduction">
+  <div class="hero-stage">
+    <h1 class="hero-bigname" id="hero-bigname" aria-hidden="true">
+      <span class="hero-bigname-item">Mirza Aqib Baig</span>
+      <span class="hero-bigname-item">Mirza Aqib Baig</span>
+      <span class="hero-bigname-item">Mirza Aqib Baig</span>
+      <span class="hero-bigname-item">Mirza Aqib Baig</span>
+    </h1>
+
+    <div class="hero-portrait-center">
+      <div class="hero-portrait" id="hero-portrait"><img src="assets/suit/frame_001.webp" alt="Portrait of Mirza Aqib Baig" width="600" height="821" fetchpriority="high" draggable="false"><canvas id="hero-seq" width="600" height="821" aria-hidden="true"></canvas></div>
+    </div>
+
+    <div class="hero-corner hero-corner-tl" data-hero-reveal>
+      <span class="hero-kicker">AI / ML Engineer</span>
+      <span class="hero-kicker dim">Portfolio &copy; 2026</span>
+    </div>
+
+    <div class="hero-corner hero-corner-tr" data-hero-reveal>
+      <span class="hero-status"><span class="dot"></span> Open to opportunities</span>
+      <ul class="hero-stack-list">
+        <li>PyTorch &amp; Deep Learning</li>
+        <li>LLMs &amp; RAG</li>
+        <li>FAISS Vector Search</li>
+        <li>FastAPI &amp; Docker</li>
+        <li>PostgreSQL &amp; Power BI</li>
+      </ul>
+    </div>
+
+    <div class="hero-corner hero-corner-bl" data-hero-reveal>
+      <p class="hero-role" data-split>Building intelligence — from data to decisions.</p>
+      <p class="hero-sub">Junior AI/ML Engineer at Digilitics, shipping production ML end to end &mdash; deep learning, LLM integration, vector search and Docker deployment.</p>
+      <p class="hero-typed" aria-hidden="true"><span class="hero-typed-pre">Currently into&nbsp;</span><span id="typed"></span><span class="caret"></span></p>
+      <div class="hero-cta"><a href="#projects" class="btn btn-primary" data-nav-link>View Selected Work</a>
+      <a href="#contact" class="btn btn-ghost" data-nav-link>Get in Touch</a></div>
+    </div>
+
+    <!-- scroll scenes: highlights that blur in around the character while the hero is pinned
+         (desktop only). Everything here repeats facts from the sections below, so it is hidden
+         from assistive tech; data-in / data-out are the scrub-progress windows (0–1). -->
+    <div class="hero-scenes" aria-hidden="true">
+      <div class="hs-scene" data-in=".04" data-out=".97">
+        <div class="hs-progress hs-item"><span>Scroll</span><i></i></div>
+      </div>
+
+      <div class="hs-scene hs-profile" data-in=".10" data-out=".38">
+        <div class="hs-left hs-stack">
+          <span class="hs-pill hs-item"><i></i>Junior AI/ML Engineer &middot; Digilitics</span>
+          <div class="hs-title hs-item">End-to-end<br>machine<br>learning</div>
+          <p class="hs-copy hs-item">Deep learning, LLM integration, vector search and Docker &mdash; from raw data to a deployed, queryable AI system.</p>
+        </div>
+        <div class="hs-right hs-stack hs-end">
+          <div class="hs-card hs-item"><span class="hs-k">Currently</span><b>Junior AI/ML Engineer</b><span>Digilitics &middot; Hyderabad</span><span class="hs-meta">Mar 2026 &ndash; Present</span></div>
+          <div class="hs-card hs-item"><span class="hs-k">Previously</span><b>Data Scientist Intern</b><span>Full Stack Academy &middot; Hyderabad</span><span class="hs-meta">Oct 2025 &ndash; Feb 2026</span></div>
+          <div class="hs-card hs-item"><span class="hs-k">Strongest in</span><div class="hs-chips"><span>PyTorch</span><span>LLM integration</span><span>Vector search</span><span>Docker</span></div></div>
+        </div>
+      </div>
+
+      <div class="hs-scene hs-work" data-in=".38" data-out=".66">
+        <div class="hs-left">
+          <div class="hs-split hs-item"><span class="label">Selected work</span><span class="hs-big">Systems</span><em class="hs-serif ital">that turned</em></div>
+          <p class="hs-note hs-item"><b>Three production systems &mdash;</b> each one a problem, a pipeline, and a result.</p>
+        </div>
+        <div class="hs-right hs-end">
+          <div class="hs-split hs-item"><span class="hs-big">Data into</span><em class="hs-serif ital">decisions</em></div>
+          <ul class="hs-lines hs-item">
+            <li><span>01</span>BI platform &mdash; three ML modules, one dashboard</li>
+            <li><span>02</span>TalentIQ &mdash; live RAG recruiter platform</li>
+            <li><span>03</span>Car Classifier &mdash; self-improving, 207 classes</li>
+          </ul>
+        </div>
+        <div class="hs-tags hs-item"><span class="hs-k">Shipped with</span>Python &middot; PyTorch &middot; FastAPI &middot; FAISS &middot; PostgreSQL &middot; Docker &middot; Railway &middot; Power BI</div>
+      </div>
+
+      <div class="hs-scene hs-signals" data-in=".66" data-out=".94">
+        <div class="hs-left">
+          <div class="hs-stat hs-item" style="--x:2%;--y:4%" data-drift="18"><span class="hs-k">CGPA</span><b>9.0<small>/10</small></b><span>B.E. Computer Science</span></div>
+          <div class="hs-stat hs-item" style="--x:46%;--y:26%" data-drift="24"><span class="hs-k">Vehicle classes</span><b>207</b><span>EfficientNet-B3</span></div>
+          <div class="hs-stat hs-item" style="--x:10%;--y:48%" data-drift="18"><span class="hs-k">Classes added</span><b>+11</b><span>196 &rarr; 207, originals kept</span></div>
+        </div>
+        <div class="hs-right">
+          <div class="hs-stat hs-item" style="--x:4%;--y:8%" data-drift="24"><span class="hs-k">ML modules</span><b>3</b><span>one PostgreSQL warehouse</span></div>
+          <div class="hs-stat hs-item" style="--x:44%;--y:30%" data-drift="18"><span class="hs-k">Retrain trigger</span><b>40+</b><span>human-approved samples</span></div>
+          <div class="hs-stat hs-item" style="--x:8%;--y:52%" data-drift="24"><span class="hs-k">LLM fallbacks</span><b>3</b><span>Gemini &middot; OpenAI &middot; Groq</span></div>
+        </div>
+        <div class="hs-caption hs-item">
+          <span class="hs-pill"><i></i>Live signals</span>
+          <div class="hs-title-sm">The numbers behind the work</div>
+          <p>Every figure comes from a system built end to end &mdash; open any project below for the full story.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>PyTorch</span><span>FastAPI</span><span>RAG</span><span>FAISS</span><span>Sentence-Transformers</span><span>Docker</span><span>PostgreSQL</span><span>Power BI</span><span>Llama 3.2</span><span>EfficientNet-B3</span><span>Scikit-Learn</span><span>MLOps</span>
+    <span>PyTorch</span><span>FastAPI</span><span>RAG</span><span>FAISS</span><span>Sentence-Transformers</span><span>Docker</span><span>PostgreSQL</span><span>Power BI</span><span>Llama 3.2</span><span>EfficientNet-B3</span><span>Scikit-Learn</span><span>MLOps</span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="label" data-reveal style="display:block;margin-bottom:18px;">01 — About</span>
+        <h2 class="sec-title" data-reveal data-split style="margin-bottom:28px;">Beyond the model. <span class="ital">Into the impact.</span></h2>
+        <p data-reveal>I'm an <strong>AI/ML engineer</strong> (B.E. Computer Science, <strong>9.0 CGPA</strong>) based in Hyderabad, with hands-on production experience building and deploying ML systems end to end.</p>
+        <p data-reveal>That means a <strong>business-intelligence and profit-optimisation platform</strong> on PostgreSQL and Power BI, a <strong>live RAG recruiter platform</strong> on FastAPI and FAISS, and a <strong>self-improving 207-class vehicle classifier</strong> with automated retraining.</p>
+        <p data-reveal>I'm strongest in <strong>PyTorch, LLM integration, vector search and Docker deployment</strong> &mdash; because a model is only useful once it's running, monitored and someone can act on what it says.</p>
+        <p data-reveal><a class="btn btn-ghost" href="Mirza_Aqib_Baig_AI_ML_Engineer_Resume.pdf" target="_blank" rel="noopener">View Resume (PDF) &nearr;</a></p>
+      </div>
+      <div class="stats-list" data-reveal-group>
+        <div class="stat-row"><span class="stat-num" data-count="9" data-decimals="1">0.0</span><span class="stat-label">CGPA &middot; B.E. Computer Science</span></div>
+        <div class="stat-row"><span class="stat-num" data-count="207">0</span><span class="stat-label">Vehicle Classes Recognised</span></div>
+        <div class="stat-row"><span class="stat-num" data-count="3">0</span><span class="stat-label">ML Modules on One Warehouse</span></div>
+        <div class="stat-row"><span class="stat-num" data-count="40" data-suffix="+">0+</span><span class="stat-label">Approved Samples Trigger Retraining</span></div>
+      </div>
+    </div>
+    <div class="manifesto" data-reveal><div class="manifesto-lines" aria-label="Train, serve, ship"><span>Train</span><span>Serve</span><span>Ship</span></div><svg class="manifesto-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"/></svg></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EXPERIENCE
+     ============================================================ -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label" data-reveal style="display:block;margin-bottom:18px;">02 — Experience</span>
+      <h2 class="sec-title" data-reveal data-split>Where the <span class="ital">work happened.</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-track"></div><div class="tl-head" aria-hidden="true"></div>
+      <div class="tl-item" data-reveal>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-head-row"><span class="tl-period"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>Mar 2026 – Present</span> <span class="now-pill"><i></i>Current role</span></div>
+          <h3 class="tl-role">Junior AI/ML Engineer</h3>
+          <span class="tl-org">Digilitics &middot; Hyderabad, India</span>
+          <p class="tl-sum">Building an end-to-end BI and profit-optimisation platform for a building-materials distributor.</p>
+          <ul class="tl-list"><li>PostgreSQL warehouse of sales, inventory and customer data, prepared with Python and Pandas.</li><li>Three ML modules &mdash; demand forecasting, customer scoring and profit optimisation &mdash; in one Power BI dashboard.</li></ul>
+          <div class="tl-tags"><span>PostgreSQL</span><span>Pandas</span><span>Forecasting</span><span>Power BI</span></div>
+        </div>
+      </div>
+      <div class="tl-item" data-reveal>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-head-row"><span class="tl-period"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>Oct 2025 – Feb 2026</span></div>
+          <h3 class="tl-role">Data Scientist Intern</h3>
+          <span class="tl-org">Full Stack Academy &middot; Hyderabad, India</span>
+          <p class="tl-sum">Built, tuned and shipped supervised ML models on structured data.</p>
+          <ul class="tl-list"><li>Trained Scikit-Learn models with feature engineering and hyperparameter tuning.</li><li>Containerised inference with Docker and wrote MS SQL Server queries for clean training sets.</li></ul>
+          <div class="tl-tags"><span>Scikit-Learn</span><span>Docker</span><span>MS SQL Server</span></div>
+        </div>
+      </div>
+      <div class="tl-item" data-reveal>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-head-row"><span class="tl-period"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>2022 – 2026</span></div>
+          <h3 class="tl-role">B.E. Computer Science &mdash; Engineering</h3>
+          <span class="tl-org">Lords Institute of Engineering and Technology &middot; Hyderabad, India</span>
+          <p class="tl-sum">CGPA 9.0 / 10, with applied ML and GenAI projects built alongside the degree.</p>
+          <ul class="tl-list"><li><strong>MedRead AI</strong> &mdash; GPT-4o-mini turns PDF lab reports into structured health insights.</li><li>Modular ML pipeline comparing seven regressors in MLflow; salary prediction at R&sup2; 0.78.</li></ul>
+          <div class="tl-tags"><span>Flask</span><span>OpenAI API</span><span>MLflow</span><span>Scikit-Learn</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SKILLS
+     ============================================================ -->
+<section id="skills" aria-labelledby="sk-title">
+  <div class="sk-tone" aria-hidden="true"></div>
+  <div class="sk-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <header class="sk-hero">
+      <div class="sk-hero-copy">
+        <span class="label sk-label" data-reveal>03 — Technical Arsenal</span>
+        <h2 class="sk-title" id="sk-title" data-reveal data-split><span class="sk-line">Engineering</span> <span class="sk-line"><span class="ital">intelligence.</span></span> <span class="sk-line">From data</span> <span class="sk-line">to <span class="ital">decisions.</span></span></h2>
+        <p class="sk-lede" data-reveal>I transform raw data into intelligent systems through machine learning, analytics, and AI-powered solutions.</p>
+        <div class="sk-core" data-reveal>
+          <span class="sk-core-k">Core stack</span>
+          <ul aria-label="Core stack"><li>Python</li><li>PyTorch</li><li>Scikit-Learn</li><li>SQL</li><li>FastAPI</li><li>RAG</li><li>FAISS</li><li>Docker</li><li>Power BI</li></ul>
+        </div>
+      </div>
+      <figure class="sk-graphic" data-reveal aria-hidden="true">
+        <svg viewBox="0 0 460 400" focusable="false">
+          <path class="g-reg" d="M10 30V10h20M430 10h20v20M450 370v20h-20M30 390H10v-20"/>
+          <text class="g-cap" x="30" y="40">FIG. 03 — DATA → DECISION</text>
+          <text x="430" y="40" text-anchor="end">SIGNAL FLOW</text>
+          <defs><clipPath id="sk-g-clip"><rect id="sk-g-clip-r" x="0" y="0" width="460" height="400"/></clipPath></defs>
+          <g clip-path="url(#sk-g-clip)">
+          <path class="g-guide" d="M84 62V330M190 62V330M296 62V330M396 62V330"/>
+          <g class="g-raw">
+            <circle cx="56" cy="92" r="2.4" style="--t:0"/><circle cx="88" cy="74" r="2.4" style="--t:1.3"/><circle cx="104" cy="118" r="2.4" style="--t:2.1"/>
+            <circle cx="66" cy="140" r="2.4" style="--t:.6"/><circle cx="96" cy="168" r="2.4" style="--t:3.2"/><circle cx="60" cy="196" r="2.4" style="--t:1.8"/>
+            <circle cx="112" cy="214" r="2.4" style="--t:2.7"/><circle cx="78" cy="236" r="2.4" style="--t:.9"/><circle cx="102" cy="262" r="2.4" style="--t:3.6"/>
+            <circle cx="58" cy="282" r="2.4" style="--t:1.1"/><circle cx="90" cy="306" r="2.4" style="--t:2.4"/><circle cx="110" cy="150" r="2.4" style="--t:.3"/>
+            <rect x="67" y="105" width="6" height="6" style="--t:1.6"/><rect x="47" y="229" width="6" height="6" style="--t:2.9"/>
+            <rect x="95" y="193" width="6" height="6" style="--t:.5"/><rect x="71" y="273" width="6" height="6" style="--t:3.4"/>
+          </g>
+          <path class="g-edge" d="M88 74C140 74 140 112 190 112M104 118C150 118 150 112 190 112M110 150C150 150 150 166 190 166M101 196C150 196 150 166 190 166M112 214C150 214 150 220 190 220M102 262C150 262 150 274 190 274M90 306C150 306 150 274 190 274"/>
+          <path class="g-edge" d="M190 112L296 139M190 112L296 193M190 112L296 247M190 166L296 139M190 166L296 193M190 166L296 247M190 220L296 139M190 220L296 193M190 220L296 247M190 274L296 139M190 274L296 193M190 274L296 247M296 139L396 193M296 193L396 193M296 247L396 193"/>
+          <path class="g-hi" d="M110 150C150 150 150 166 190 166L296 139L396 193"/>
+          <path class="pl" pathLength="100" d="M110 150C150 150 150 166 190 166L296 139L396 193"/>
+          <path class="pl" pathLength="100" d="M112 214C150 214 150 220 190 220L296 247L396 193"/>
+          <path class="pl" pathLength="100" d="M88 74C140 74 140 112 190 112L296 193L396 193"/>
+          <circle class="g-node" cx="190" cy="112" r="7"/><circle class="g-node on" cx="190" cy="166" r="7"/><circle class="g-node" cx="190" cy="220" r="7"/><circle class="g-node" cx="190" cy="274" r="7"/>
+          <circle class="g-node on" cx="296" cy="139" r="8"/><circle class="g-node" cx="296" cy="193" r="8"/><circle class="g-node" cx="296" cy="247" r="8"/>
+          <circle class="g-halo" cx="396" cy="193" r="34"/>
+          <circle class="g-ring" cx="396" cy="193" r="25"/>
+          <circle class="g-core" cx="396" cy="193" r="10"/><circle fill="#d6b46a" cx="396" cy="193" r="3.5"/>
+          <path class="g-hi" d="M424 193H446M440 188l6 5-6 5"/>
+          <path class="g-tick" d="M84 338v8M190 338v8M296 338v8M396 338v8"/>
+          <text x="84" y="366" text-anchor="middle">RAW DATA</text>
+          <text x="190" y="366" text-anchor="middle">FEATURES</text>
+          <text x="296" y="366" text-anchor="middle">MODEL</text>
+          <text class="g-cap" x="396" y="366" text-anchor="middle">DECISION</text>
+          </g>
+          <line class="g-scan" id="sk-g-scan" x1="460" y1="56" x2="460" y2="378"/>
+        </svg>
+      </figure>
+      <div class="sk-meta" data-reveal>
+        <a class="sk-scroll" href="#sk-deck"><span class="sk-scroll-line" aria-hidden="true"><i></i></span>Explore the stack</a>
+        <ul class="sk-facts"><li><b>06</b>Disciplines</li><li><b>55</b>Skills &amp; tools</li><li><b>49</b>Applied hands-on</li></ul>
+      </div>
+    </header>
+
+    <div class="sk-pin" id="sk-pin"><div class="sk-sticky" id="sk-sticky"><i class="sk-glow" aria-hidden="true"></i>
+    <div class="sk-deck" id="sk-deck">
+      <div class="sk-side" data-reveal>
+        <span class="sk-side-k">Six disciplines</span>
+        <div class="sk-tabs" role="tablist" aria-label="Skill categories" aria-orientation="vertical">
+          <i class="sk-tab-ind" aria-hidden="true"></i>
+          <button type="button" class="sk-tab" role="tab" id="sk-tab-1" aria-controls="sk-card-1" aria-selected="true" tabindex="0"><span class="sk-tab-n">01</span><span class="sk-tab-t">AI &amp; Machine Learning</span><span class="sk-tab-c">06</span></button>
+          <button type="button" class="sk-tab" role="tab" id="sk-tab-2" aria-controls="sk-card-2" aria-selected="false" tabindex="-1"><span class="sk-tab-n">02</span><span class="sk-tab-t">Deep Learning &amp; NLP</span><span class="sk-tab-c">10</span></button>
+          <button type="button" class="sk-tab" role="tab" id="sk-tab-3" aria-controls="sk-card-3" aria-selected="false" tabindex="-1"><span class="sk-tab-n">03</span><span class="sk-tab-t">Data Analytics &amp; BI</span><span class="sk-tab-c">07</span></button>
+          <button type="button" class="sk-tab" role="tab" id="sk-tab-4" aria-controls="sk-card-4" aria-selected="false" tabindex="-1"><span class="sk-tab-n">04</span><span class="sk-tab-t">Generative AI &amp; LLMs</span><span class="sk-tab-c">10</span></button>
+          <button type="button" class="sk-tab" role="tab" id="sk-tab-5" aria-controls="sk-card-5" aria-selected="false" tabindex="-1"><span class="sk-tab-n">05</span><span class="sk-tab-t">Data Engineering &amp; Deployment</span><span class="sk-tab-c">14</span></button>
+          <button type="button" class="sk-tab" role="tab" id="sk-tab-6" aria-controls="sk-card-6" aria-selected="false" tabindex="-1"><span class="sk-tab-n">06</span><span class="sk-tab-t">Forecasting &amp; Decision Analytics</span><span class="sk-tab-c">08</span></button>
+        </div>
+        <div class="sk-ctrl">
+          <button type="button" class="sk-nav-btn" id="sk-prev" aria-label="Previous skill category"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+          <button type="button" class="sk-nav-btn" id="sk-next" aria-label="Next skill category"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <span class="sk-count" aria-hidden="true"><span class="sk-count-win"><span class="sk-count-roll"><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span></span></span><span class="sk-count-of">/ 06</span></span>
+        </div>
+        <div class="sk-prog" aria-hidden="true"><i style="--f:1"></i><i></i><i></i><i></i><i></i><i></i></div>
+        <ul class="sk-legend">
+          <li><i class="sk-dot" aria-hidden="true"></i>Applied in a project or role on this page</li>
+          <li><i class="sk-dot sk-o" aria-hidden="true"></i>Also in my toolkit</li>
+        </ul>
+        <p class="sk-sr" id="sk-live" aria-live="polite"></p>
+      </div>
+
+      <div class="sk-stage" id="sk-stage">
+        <canvas class="sk-glitter" aria-hidden="true"></canvas>
+
+        <article class="sk-card sk-t-ivory" id="sk-card-1" role="tabpanel" aria-labelledby="sk-tab-1" tabindex="0">
+          <div class="sk-card-in"><span class="sk-glare" aria-hidden="true"></span><span class="sk-shade" aria-hidden="true"></span>
+            <div class="sk-card-head"><span class="sk-card-n">01</span><span class="sk-card-k">AI &amp; ML</span><span class="sk-card-c">06 skills &middot; 06 applied</span></div>
+            <div class="sk-card-body">
+              <svg class="sk-art" viewBox="0 0 220 170" aria-hidden="true" focusable="false">
+                <path class="fl" d="M16 10H204V12C160 24 138 56 118 82C98 108 70 128 16 140Z"/>
+                <path class="ln" d="M16 154H210M16 154V10"/>
+                <path class="lt" d="M56 154v5M96 154v5M136 154v5M176 154v5M11 114h5M11 74h5M11 34h5"/>
+                <path class="ac" d="M16 140C70 128 98 108 118 82S160 24 204 12"/>
+                <path class="pl" pathLength="100" d="M16 140C70 128 98 108 118 82S160 24 204 12"/>
+                <g class="nd"><circle cx="40" cy="48" r="4"/><circle cx="62" cy="30" r="4"/><circle cx="54" cy="76" r="4"/><circle cx="84" cy="52" r="4"/><circle cx="34" cy="104" r="4"/><circle cx="98" cy="30" r="4"/><circle cx="74" cy="98" r="4"/></g>
+                <g class="fc"><circle cx="128" cy="128" r="3.6"/><circle cx="150" cy="108" r="3.6"/><circle cx="172" cy="132" r="3.6"/><circle cx="192" cy="98" r="3.6"/><circle cx="160" cy="74" r="3.6"/><circle cx="190" cy="56" r="3.6"/><circle cx="112" cy="144" r="3.6"/><circle cx="146" cy="142" r="3.6"/></g>
+              </svg>
+              <div class="sk-card-lead"><h3 class="sk-card-title">AI &amp; Machine Learning</h3>
+                <p class="sk-card-desc">Supervised models, from feature engineering to tuned and evaluated predictions.</p></div>
+              <ul class="sk-chips">
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Supervised Learning<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Scikit-Learn<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Feature Engineering<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Hyperparameter Tuning<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Model Evaluation<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Predictive Modelling<span class="sk-sr"> (applied)</span></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="sk-card sk-t-charcoal" id="sk-card-2" role="tabpanel" aria-labelledby="sk-tab-2" tabindex="-1">
+          <div class="sk-card-in"><span class="sk-glare" aria-hidden="true"></span><span class="sk-shade" aria-hidden="true"></span>
+            <div class="sk-card-head"><span class="sk-card-n">02</span><span class="sk-card-k">Deep Learning &amp; NLP</span><span class="sk-card-c">10 skills &middot; 07 applied</span></div>
+            <div class="sk-card-body">
+              <svg class="sk-art" viewBox="0 0 220 170" aria-hidden="true" focusable="false">
+                <path class="lt" d="M34 30L86 30M34 30L86 66M34 64L86 30M34 64L86 102M34 98L86 66M34 98L86 138M34 132L86 102M34 132L86 138M86 30L142 48M86 30L142 84M86 30L142 120M86 66L142 48M86 66L142 120M86 102L142 48M86 102L142 84M86 102L142 120M86 138L142 48M86 138L142 84M86 138L142 120M142 48L196 66M142 48L196 102M142 120L196 66M142 84L196 102M142 120L196 102"/>
+                <path class="ac" d="M34 64L86 66L142 84L196 66"/>
+                <path class="pl" pathLength="100" d="M34 64L86 66L142 84L196 66"/>
+                <g class="ln"><rect x="4" y="24" width="30" height="12" rx="3"/><rect x="4" y="58" width="30" height="12" rx="3"/><rect x="4" y="92" width="30" height="12" rx="3"/><rect x="4" y="126" width="30" height="12" rx="3"/></g>
+                <path class="lt" d="M10 30h16M10 98h12M10 132h18"/>
+                <path class="ac" d="M10 64h16"/>
+                <g class="nd"><circle cx="86" cy="30" r="6.5"/><circle cx="86" cy="102" r="6.5"/><circle cx="86" cy="138" r="6.5"/><circle cx="142" cy="48" r="6.5"/><circle cx="142" cy="120" r="6.5"/><circle cx="196" cy="102" r="6.5"/></g>
+                <g class="nd hl"><circle cx="86" cy="66" r="6.5"/><circle cx="142" cy="84" r="6.5"/><circle cx="196" cy="66" r="6.5"/></g>
+                <g class="fa"><circle cx="86" cy="66" r="2.6"/><circle cx="142" cy="84" r="2.6"/><circle cx="196" cy="66" r="2.6"/></g>
+              </svg>
+              <div class="sk-card-lead"><h3 class="sk-card-title">Deep Learning &amp; NLP</h3>
+                <p class="sk-card-desc">Neural networks for vision and language, fine-tuned on real-world data.</p></div>
+              <ul class="sk-chips">
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>PyTorch<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Neural Networks<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Transfer Learning<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Fine-tuning<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>EfficientNet-B3<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>NLP<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Sentence-Transformers<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot sk-o" aria-hidden="true"></i>Hugging Face Transformers</li>
+                <li class="sk-chip"><i class="sk-dot sk-o" aria-hidden="true"></i>TensorFlow</li>
+                <li class="sk-chip"><i class="sk-dot sk-o" aria-hidden="true"></i>Keras</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="sk-card sk-t-sand" id="sk-card-3" role="tabpanel" aria-labelledby="sk-tab-3" tabindex="-1">
+          <div class="sk-card-in"><span class="sk-glare" aria-hidden="true"></span><span class="sk-shade" aria-hidden="true"></span>
+            <div class="sk-card-head"><span class="sk-card-n">03</span><span class="sk-card-k">Analytics &amp; BI</span><span class="sk-card-c">07 skills &middot; 05 applied</span></div>
+            <div class="sk-card-body">
+              <svg class="sk-art" viewBox="0 0 220 170" aria-hidden="true" focusable="false">
+                <path class="ln" d="M14 150H210"/>
+                <g class="bar"><rect x="24" y="104" width="18" height="46" rx="2"/><rect x="56" y="80" width="18" height="70" rx="2"/><rect x="88" y="92" width="18" height="58" rx="2"/><rect x="120" y="58" width="18" height="92" rx="2"/><rect x="152" y="70" width="18" height="80" rx="2"/></g>
+                <rect class="fa" x="184" y="38" width="18" height="112" rx="2" opacity=".85"/>
+                <path class="ac" d="M33 92L65 70L97 80L129 46L161 58L193 24"/>
+                <path class="pl" pathLength="100" d="M33 92L65 70L97 80L129 46L161 58L193 24"/>
+                <g class="nd hl"><circle cx="33" cy="92" r="3.2"/><circle cx="65" cy="70" r="3.2"/><circle cx="97" cy="80" r="3.2"/><circle cx="129" cy="46" r="3.2"/><circle cx="161" cy="58" r="3.2"/><circle cx="193" cy="24" r="3.2"/></g>
+                <circle class="lt" cx="40" cy="34" r="16"/>
+                <path class="ac" d="M40 18A16 16 0 1 1 24.8 38.9"/>
+              </svg>
+              <div class="sk-card-lead"><h3 class="sk-card-title">Data Analytics &amp; BI</h3>
+                <p class="sk-card-desc">Cleaning, querying and visualising data until the business story is obvious.</p></div>
+              <ul class="sk-chips">
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Python<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>SQL<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Data Cleaning<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Power BI<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Data Visualisation<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot sk-o" aria-hidden="true"></i>Tableau</li>
+                <li class="sk-chip"><i class="sk-dot sk-o" aria-hidden="true"></i>Jupyter Notebook</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="sk-card sk-t-gold" id="sk-card-4" role="tabpanel" aria-labelledby="sk-tab-4" tabindex="-1">
+          <div class="sk-card-in"><span class="sk-glare" aria-hidden="true"></span><span class="sk-shade" aria-hidden="true"></span>
+            <div class="sk-card-head"><span class="sk-card-n">04</span><span class="sk-card-k">GenAI &amp; LLMs</span><span class="sk-card-c">10 skills &middot; 10 applied</span></div>
+            <div class="sk-card-body">
+              <svg class="sk-art" viewBox="0 0 220 170" aria-hidden="true" focusable="false">
+                <rect class="lt" x="16" y="32" width="46" height="60" rx="4"/>
+                <rect class="ln nd" x="10" y="40" width="46" height="60" rx="4"/>
+                <path class="lt" d="M18 54h28M18 64h22M18 74h28M18 84h16"/>
+                <path class="dsh" d="M60 70C74 70 82 76 94 80"/>
+                <circle class="acd" cx="128" cy="84" r="30"/>
+                <g class="fc"><circle cx="100" cy="58" r="2"/><circle cx="114" cy="46" r="2"/><circle cx="148" cy="50" r="2"/><circle cx="162" cy="76" r="2"/><circle cx="154" cy="112" r="2"/><circle cx="118" cy="122" r="2"/><circle cx="92" cy="100" r="2"/><circle cx="170" cy="98" r="2"/><circle cx="96" cy="74" r="2"/></g>
+                <path class="ac" d="M128 84L134 66M128 84L110 80M128 84L142 96"/>
+                <g class="fa"><circle cx="134" cy="66" r="3"/><circle cx="110" cy="80" r="3"/><circle cx="142" cy="96" r="3"/></g>
+                <path class="fa" d="M128 75C128.9 81.5 130.5 83.1 137 84C130.5 84.9 128.9 86.5 128 93C127.1 86.5 125.5 84.9 119 84C125.5 83.1 127.1 81.5 128 75Z"/>
+                <path class="ac" d="M152 106C166 112 172 116 176 120"/>
+                <path class="pl" pathLength="100" d="M60 70C74 70 82 76 94 80L128 84L142 96L152 106C166 112 172 116 176 120"/>
+                <rect class="ln nd" x="170" y="118" width="44" height="28" rx="10"/>
+                <path class="ln" d="M182 146l-5 10 13-10"/>
+                <g class="fc"><circle cx="183" cy="132" r="2"/><circle cx="192" cy="132" r="2"/><circle cx="201" cy="132" r="2"/></g>
+                <path class="fa" d="M192 24C193.5 35 196 37.5 207 39C196 40.5 193.5 43 192 54C190.5 43 188 40.5 177 39C188 37.5 190.5 35 192 24Z"/>
+                <path class="fa" d="M168 14C168.7 19 170 20.3 175 21C170 21.7 168.7 23 168 28C167.3 23 166 21.7 161 21C166 20.3 167.3 19 168 14Z" opacity=".6"/>
+              </svg>
+              <div class="sk-card-lead"><h3 class="sk-card-title">Generative AI &amp; LLMs</h3>
+                <p class="sk-card-desc">LLM applications grounded in retrieval, with fallbacks for when a model is unsure.</p></div>
+              <ul class="sk-chips">
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Large Language Models<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>RAG<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Embeddings<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Semantic Search<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>FAISS Vector Search<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Prompt Engineering<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>OpenAI &middot; Gemini &middot; Groq<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Ollama &middot; Llama 3.2<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>LLM Fallback Chains<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Human-in-the-Loop Eval<span class="sk-sr"> (applied)</span></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="sk-card sk-t-night" id="sk-card-5" role="tabpanel" aria-labelledby="sk-tab-5" tabindex="-1">
+          <div class="sk-card-in"><span class="sk-glare" aria-hidden="true"></span><span class="sk-shade" aria-hidden="true"></span>
+            <div class="sk-card-head"><span class="sk-card-n">05</span><span class="sk-card-k">Data Eng &amp; Deploy</span><span class="sk-card-c">14 skills &middot; 13 applied</span></div>
+            <div class="sk-card-body">
+              <svg class="sk-art" viewBox="0 0 220 170" aria-hidden="true" focusable="false">
+                <path class="ln nd" d="M14 46V96C14 100.4 23.8 104 36 104S58 100.4 58 96V46"/>
+                <ellipse class="ln nd" cx="36" cy="46" rx="22" ry="8"/>
+                <path class="lt" d="M14 63C14 67.4 23.8 71 36 71S58 67.4 58 63M14 80C14 84.4 23.8 88 36 88S58 84.4 58 80"/>
+                <path class="ac" d="M60 74H82M77 70l5 4-5 4M136 74H158M153 70l5 4-5 4"/>
+                <rect class="ln nd" x="86" y="50" width="48" height="48" rx="8"/>
+                <path class="ac" d="M106 62c-4 0-4 2-4 6s0 6-4 6c4 0 4 2 4 6s0 6 4 6M114 62c4 0 4 2 4 6s0 6 4 6c-4 0-4 2-4 6s0 6-4 6"/>
+                <rect class="ln nd" x="162" y="40" width="48" height="62" rx="6"/>
+                <g class="lt"><rect x="170" y="50" width="14" height="10" rx="1.5"/><rect x="188" y="50" width="14" height="10" rx="1.5"/><rect x="170" y="66" width="14" height="10" rx="1.5"/><rect x="188" y="66" width="14" height="10" rx="1.5"/><rect x="170" y="82" width="14" height="10" rx="1.5"/></g>
+                <rect class="fa" x="188" y="82" width="14" height="10" rx="1.5"/>
+                <path class="acd" d="M186 106C186 146 36 146 36 112"/>
+                <path class="ac" d="M31 118l5-7 5 7"/>
+                <path class="pl" pathLength="100" d="M58 74H162"/>
+                <path class="pl" pathLength="100" d="M186 106C186 146 36 146 36 112"/>
+              </svg>
+              <div class="sk-card-lead"><h3 class="sk-card-title">Data Engineering &amp; Deployment</h3>
+                <p class="sk-card-desc">APIs, databases and containers that keep models running after the notebook closes.</p></div>
+              <ul class="sk-chips">
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Pandas<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot sk-o" aria-hidden="true"></i>NumPy</li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>FastAPI<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Flask<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>REST APIs<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Unit Testing<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>PostgreSQL<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>MySQL<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>MS SQL Server<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Docker<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>MLflow<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Git &amp; GitHub<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Railway<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Automated Retraining<span class="sk-sr"> (applied)</span></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="sk-card sk-t-parch" id="sk-card-6" role="tabpanel" aria-labelledby="sk-tab-6" tabindex="-1">
+          <div class="sk-card-in"><span class="sk-glare" aria-hidden="true"></span><span class="sk-shade" aria-hidden="true"></span>
+            <div class="sk-card-head"><span class="sk-card-n">06</span><span class="sk-card-k">Forecasting &amp; Decisions</span><span class="sk-card-c">08 skills &middot; 08 applied</span></div>
+            <div class="sk-card-body">
+              <svg class="sk-art" viewBox="0 0 220 170" aria-hidden="true" focusable="false">
+                <path class="ln" d="M14 150H210M14 150V14"/>
+                <path class="dsh" d="M14 110H210M14 70H210M14 30H210" opacity=".35"/>
+                <path class="fl" d="M116 70L140 52L164 40L188 30L206 22V64L188 66L164 70L140 74Z"/>
+                <path class="dsh" d="M116 18V150"/>
+                <path class="ln" d="M14 118L30 104L44 112L58 92L72 98L86 80L100 86L116 70" style="stroke-width:1.6"/>
+                <path class="pl" pathLength="100" d="M14 118L30 104L44 112L58 92L72 98L86 80L100 86L116 70"/>
+                <path class="acd" d="M116 70L140 62L164 54L188 48L206 42"/>
+                <g class="nd"><circle cx="30" cy="104" r="2.6"/><circle cx="58" cy="92" r="2.6"/><circle cx="86" cy="80" r="2.6"/></g>
+                <circle class="fa" cx="116" cy="70" r="4"/>
+                <circle class="fa" cx="206" cy="42" r="3.4"/>
+              </svg>
+              <div class="sk-card-lead"><h3 class="sk-card-title">Forecasting &amp; Decision Analytics</h3>
+                <p class="sk-card-desc">Turning model output into numbers a business owner can act on.</p></div>
+              <ul class="sk-chips">
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Demand Forecasting<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Regression Analysis<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Customer Scoring<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Customer Segmentation<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Margin Analysis<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Profit Optimisation<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>Inventory Planning<span class="sk-sr"> (applied)</span></li>
+                <li class="sk-chip"><i class="sk-dot" aria-hidden="true"></i>KPI Dashboards<span class="sk-sr"> (applied)</span></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    </div></div>
+
+    <div class="focus-wrap">
+      <span class="focus-title" data-reveal>Areas of Focus</span>
+      <div class="sphere-stage" id="focus-sphere" data-reveal>
+        <span class="sphere-hint">Drag to spin</span>
+      </div>
+    </div>
+
+    <div class="sk-outro" data-reveal>
+      <a class="sk-outro-link" href="#projects">Explore Projects <span aria-hidden="true">&darr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROJECTS
+     ============================================================ -->
+<section id="projects" aria-labelledby="pw-heading">
+  <div class="wrap pw-intro">
+    <div class="pw-intro-main">
+      <span class="label pw-label">04 — Selected Work</span>
+      <h2 class="sec-title pw-heading" id="pw-heading"><span class="pw-line"><span>Systems that</span></span> <span class="pw-line"><span>turned <span class="ital">data</span></span></span> <span class="pw-line"><span><span class="ital">into decisions.</span></span></span></h2>
+    </div>
+    <div class="pw-intro-side">
+      <p class="pw-intro-desc">Four systems — each one a problem, a pipeline, and a result. Open any project for the full story.</p>
+      <p class="pw-intro-meta"><span>04 projects</span><span class="pw-intro-hint">Scroll to explore <i aria-hidden="true"></i></span></p>
+    </div>
+    <i class="pw-rule" aria-hidden="true"></i>
+  </div>
+
+  <div class="pw-pin" id="pw-pin">
+    <div class="pw-sticky" id="pw-sticky">
+      <div class="pw-viewport" id="pw-viewport">
+        <div class="pw-track" id="pw-track">
+
+          <article class="pw-panel pw-l-wide" data-case="bi" data-name="BI Platform" aria-labelledby="pw-t-1">
+            <figure class="pw-frame pw-f-wide"><div class="pw-media"><img src="assets/projects/bi-platform.jpg" alt="Profit intelligence cover: a dashboard with sales bars and a forecast line" width="1200" height="1200" loading="lazy" decoding="async"></div></figure>
+            <header class="pw-head">
+              <span class="pw-meta"><span class="pw-num">01</span><span class="pw-cat">Business Intelligence · Forecasting</span><span class="live-badge"><i></i>Live</span></span>
+              <h3 class="pw-title pw-title-long" id="pw-t-1">Business Intelligence &amp; Profit Optimisation Platform</h3>
+            </header>
+            <div class="pw-copy">
+              <p class="pw-lede">Built at Digilitics for a building-materials distribution client.</p>
+              <p class="pw-desc">Digilitics: PostgreSQL warehouse with three ML modules — demand forecasting, customer scoring and profit optimisation — surfaced through one Power BI dashboard.</p>
+              <ul class="pw-stack" aria-label="Tech stack"><li>Python</li><li>Pandas</li><li>PostgreSQL</li><li>Machine Learning</li><li>Power BI</li></ul>
+              <div class="pw-links">
+                <button type="button" class="pw-cta" data-open-case>Read case study <span aria-hidden="true">→</span></button>
+                <span class="pw-private">Client work · private</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="pw-panel pw-l-bleed" data-case="talentiq" data-name="TalentIQ" aria-labelledby="pw-t-2">
+            <figure class="pw-frame pw-f-bleed"><div class="pw-media"><img src="assets/projects/talentiq-app.jpg" alt="TalentIQ match results: candidates ranked for an AI/ML Engineer role with match and ATS scores" width="1831" height="1169" loading="lazy" decoding="async"></div></figure>
+            <header class="pw-head">
+              <span class="pw-meta"><span class="pw-num">02</span><span class="pw-cat">NLP · Retrieval · Full-stack</span><span class="live-badge"><i></i>Live</span></span>
+              <h3 class="pw-title" id="pw-t-2">TalentIQ <span class="pw-sub"><span class="pw-sr">— </span>AI-Powered Recruiter Intelligence Platform</span></h3>
+            </header>
+            <div class="pw-copy">
+              <p class="pw-lede">Semantic resume-to-job matching, built end to end and deployed as a live public service.</p>
+              <p class="pw-desc">Semantic resume-to-job matching with Sentence-Transformers and FAISS, a weighted scoring algorithm, and a Llama 3.2 RAG pipeline for candidate-job fit analyses — live on Railway.</p>
+              <ul class="pw-stack" aria-label="Tech stack"><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>FAISS</li><li>Sentence-Transformers</li><li>RAG</li><li>Docker</li><li>Railway</li></ul>
+              <div class="pw-links">
+                <button type="button" class="pw-cta" data-open-case>Read case study <span aria-hidden="true">→</span></button>
+                <a class="text-link gold" href="https://ai-talent-intelligence-platform-production.up.railway.app" target="_blank" rel="noopener" onclick="event.stopPropagation()">Live demo ↗</a>
+                <a class="text-link gold" href="https://github.com/aqibbaigg" target="_blank" rel="noopener" onclick="event.stopPropagation()">View on GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="pw-panel pw-l-asym" data-case="carclassifier" data-name="Car Classifier" aria-labelledby="pw-t-3">
+            <figure class="pw-frame"><div class="pw-media"><img src="assets/projects/car-classifier.jpg" alt="Car Classifier cover: a car inside a detection bounding box" width="1200" height="1200" loading="lazy" decoding="async"></div></figure>
+            <header class="pw-head">
+              <span class="pw-meta"><span class="pw-num">03</span><span class="pw-cat">Computer Vision · MLOps</span></span>
+              <h3 class="pw-title" id="pw-t-3">Car Classifier <span class="pw-sub"><span class="pw-sr">— </span>Self-Improving Vehicle Recognition</span></h3>
+            </header>
+            <div class="pw-copy">
+              <p class="pw-lede">A vehicle classifier that notices what it does not know, asks for help, and retrains itself.</p>
+              <p class="pw-desc">A PyTorch EfficientNet-B3 classifier grown from 196 to 207 classes, with a confidence-thresholded LLM fallback chain and fully automated retraining.</p>
+              <ul class="pw-stack" aria-label="Tech stack"><li>PyTorch</li><li>EfficientNet-B3</li><li>FastAPI</li><li>MySQL</li><li>Gemini</li><li>OpenAI</li><li>Groq</li></ul>
+              <div class="pw-links">
+                <button type="button" class="pw-cta" data-open-case>Read case study <span aria-hidden="true">→</span></button>
+                <a class="text-link gold" href="https://github.com/aqibbaigg/car_classifier" target="_blank" rel="noopener" onclick="event.stopPropagation()">View on GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="pw-panel pw-l-bleed" data-case="medread" data-name="MedRead AI" aria-labelledby="pw-t-4">
+            <figure class="pw-frame pw-f-bleed"><div class="pw-media"><img src="assets/projects/medread-app.jpg" alt="MedRead AI results page: AI-generated health insights and recommendations for an uploaded lab report" width="975" height="579" loading="lazy" decoding="async"></div></figure>
+            <header class="pw-head">
+              <span class="pw-meta"><span class="pw-num">04</span><span class="pw-cat">Generative AI · Healthcare · Flask</span></span>
+              <h3 class="pw-title" id="pw-t-4">MedRead AI <span class="pw-sub"><span class="pw-sr">— </span>Automated Medical Report Analysis</span></h3>
+            </header>
+            <div class="pw-copy">
+              <p class="pw-lede">Turning dense lab reports into clear, explainable insights for patients and clinicians.</p>
+              <p class="pw-desc">Upload a PDF lab report and get back a structured, explainable reading: summary, health insights, clinician recommendations, lifestyle guidance and follow-up steps &mdash; generated by GPT-4o-mini from the extracted report text.</p>
+              <ul class="pw-stack" aria-label="Tech stack"><li>Python</li><li>Flask</li><li>pdfplumber</li><li>OpenAI API</li><li>GPT-4o-mini</li><li>Prompt Engineering</li></ul>
+              <div class="pw-links">
+                <button type="button" class="pw-cta" data-open-case>Read case study <span aria-hidden="true">→</span></button>
+                <a class="text-link gold" href="https://github.com/aqibbaigg/Automated-Analysis-of-Medical-Reports-for-Personalized-Health-Insight-Generation" target="_blank" rel="noopener" onclick="event.stopPropagation()">View on GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="pw-hud" id="pw-hud">
+        <div class="pw-hud-in">
+          <p class="pw-count" aria-hidden="true"><span class="pw-count-cur" id="pw-count">01</span><span class="pw-count-tot">/ 04</span></p>
+          <p class="pw-now" id="pw-now" aria-hidden="true">BI Platform</p>
+          <div class="pw-prog" role="group" aria-label="Projects">
+            <span class="pw-prog-line" aria-hidden="true"><i id="pw-fill"></i></span>
+            <button type="button" class="pw-tick" aria-label="Project 1: Business Intelligence &amp; Profit Optimisation Platform"></button>
+            <button type="button" class="pw-tick" aria-label="Project 2: TalentIQ"></button>
+            <button type="button" class="pw-tick" aria-label="Project 3: Car Classifier"></button>
+            <button type="button" class="pw-tick" aria-label="Project 4: MedRead AI"></button>
+          </div>
+          <div class="pw-ctrl">
+            <button type="button" class="pw-nav-btn" id="pw-prev" aria-label="Previous project"><svg viewBox="0 0 32 12" aria-hidden="true"><path d="M31 6H2M7 1L2 6l5 5"/></svg><span>Prev</span></button>
+            <button type="button" class="pw-nav-btn" id="pw-next" aria-label="Next project"><span>Next</span><svg viewBox="0 0 32 12" aria-hidden="true"><path d="M1 6h29M25 1l5 5-5 5"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <p class="pw-sr" id="pw-live" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label" data-reveal style="display:block;margin-bottom:18px;">05 — Education</span>
+      <h2 class="sec-title" data-reveal data-split>The <span class="ital">foundation.</span></h2>
+    </div>
+    <div class="edu-grid" data-reveal-group>
+      <div class="edu-card" data-spot>
+        <span class="edu-year">2022 – 2026</span>
+        <h3>B.E. Computer Science</h3>
+        <p class="edu-org">Lords Institute of Engineering and Technology &middot; Hyderabad</p>
+        <div class="edu-cgpa"><span class="stat-num" data-count="9" data-decimals="1">0.0</span><span class="stat-label">/ 10 CGPA</span></div>
+      </div>
+      <div class="edu-card" data-spot>
+        <span class="edu-year">Certifications</span>
+        <h3>Continuous learning</h3>
+        <ul class="edu-certs"><li>Machine Learning &mdash; Internshala</li><li>Data Science</li><li>AI Fundamentals</li><li>Data Analytics</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section id="contact">
+  <div class="wrap">
+    <span class="label" data-reveal>06 — Contact</span>
+    <h2 class="contact-title" data-reveal data-split>Let's build something <span class="ital">worth shipping.</span></h2>
+    <p class="contact-sub" data-reveal>Have an idea, a problem, or an opportunity? Let's turn data into something meaningful.</p>
+    <div class="contact-actions" data-reveal>
+      <button class="btn btn-primary" id="email-cta">Email Me</button>
+      <a class="btn btn-ghost" href="https://github.com/aqibbaigg" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/mirza-aqib-baig" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="Mirza_Aqib_Baig_AI_ML_Engineer_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+    <div class="contact-email" data-reveal>
+      <span id="email-text">aqibmirza059@gmail.com</span>
+      <button class="copy-btn" id="copy-email">Copy</button>
+    </div>
+    <div class="contact-meta" data-reveal><span class="cm-avail"><i></i>Open to AI/ML roles &middot; full-time</span><span class="cm-time">Hyderabad &middot; <b id="local-time">--:--</b> IST</span></div>
+  </div>
+  <div class="giant-name" aria-hidden="true">Mirza Aqib Baig</div>
+</section>
+
+<footer class="wrap">
+  <span>© <span id="year"></span> Mirza Aqib Baig</span>
+  <span>Hyderabad, India &middot; +91 8886665405</span>
+</footer>
+
+<!-- ============================================================
+     CASE STUDY OVERLAY
+     ============================================================ -->
+<div class="case-overlay" id="case" role="dialog" aria-modal="true" aria-labelledby="case-title">
+  <div class="case-panel" id="case-panel"></div>
+</div>
+
+<script src="lib/gl-matrix-min.js"></script>
+<script src="assets/infinite-menu.js"></script>
+<script src="js/main.js"></script>
+<script src="js/skills.js"></script>
+<script src="js/projects.js"></script>
+
+<script type="module" src="js/fx-splash-cursor.js"></script>
+<script type="module" src="js/fx-cursor-grid.js"></script>
+<script src="js/hero.js"></script>
+<script src="js/polish.js"></script>
+<script src="lib/gsap.3.13.min.js"></script>
+<script src="lib/SplitText.3.13.min.js"></script>
+<script src="lib/ScrambleTextPlugin.3.13.min.js"></script>
+<script type="module" src="js/fx-text.js"></script>
+<script src="js/nav-autohide.js"></script>
+</body>
+</html>

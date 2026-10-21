@@ -1,0 +1,9 @@
+# Keep text files with LF line endings in the repo
+* text=auto eol=lf
+
+# Binary assets: never touch line endings or try to diff them
+*.webp binary
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.pdf  binary
